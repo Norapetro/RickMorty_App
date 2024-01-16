@@ -1,53 +1,20 @@
-<ul>
-  @for (personaje of personajes.results; track $index) {
-    <li>
-      <img [src]="personaje.image">
-      {{personaje.name}}
-    </li>
-  }
-</ul>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <p>observador works!</p>
-
-<mat-spinner></mat-spinner>
-
-<mat-card class="example-card">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <p>
-      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-      bred for hunting.
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card> -->
+<div class="cards-container">
+  <div *ngFor="let personaje of personajes.results" 
+  class="card" 
+  style="width: 18rem;"
+  >
+    <h1 class="card-title">{{ personaje.name }}</h1>
+    <img [src]="personaje.image" class="card-img-top" alt="{{ personaje.name }}">
+    <div class="card-body">
+      <p class="card-text">
+        Id:{{personaje.id}}<br>
+        Status: {{ personaje.status }}<br>
+        Species: {{ personaje.species }}<br>
+        Gender: {{ personaje.gender }}<br>
+        visto por primera vez: <br> <strong>{{personaje.origin.name}}</strong><br>
+        visto por ultima vez: <br> <strong>{{personaje.location.name}}</strong> 
+      </p>
+  </div>
+</div>

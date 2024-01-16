@@ -1,4 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+/* app.component.css */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Opcional: Alineación de las tarjetas */
+    padding: 20px; /* Opcional: Añadir espacio alrededor del contenedor */
+  }
+  
+  .card {
+      border: 1px solid #ccc;
+      margin: 20px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 4px 8px rgba(19, 3, 250, 0.1); /* Sombra */
+      
+    }
+    
+    .card-title {
+      padding:10px;
+     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     font-size: 25px;
+     letter-spacing: 1.6px;
+     color: #7D7D7D;
+     font-weight: 700;
+     text-decoration: none;
+     font-style: normal;
+     font-variant: normal;
+     text-transform: uppercase;
+     margin-bottom: 10px;
+    }
+    
+    .card-img-top {
+     width: 100;
+     border-radius: 44px;
+     background: #e0e0e0;
+     box-shadow: inset 5px 5px 14px #cecece,
+              inset -5px -5px 14px #f2f2f2;
+  }
+    
+    .card-body {
+      font-size: 1.2em;
+    }
+    
+    .card-text {
+      font-size: 1rem;
+      color: #666;
+    }
+    
+    .card-link {
+      text-decoration: none;
+      color: #007bff; /* Color del enlace */
+      margin-right: 10px;
+    }
+    
+    .card-link:hover {
+      text-decoration: underline; /* Subrayar al pasar el ratón sobre el enlace */
+    }
+
+/* Estilo para los botones de iconos en el mat-toolbar */
+button.example-icon {
+  color: rgb(255, 9, 9); 
+}
+
+button.favorite-icon {
+  color: red; 
+}
+
+span.example-spacer {
+  flex: 1; 
+  color: yellow;
+}
+
+button.example-icon:hover {
+  background-color: #1565C0; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+}
+mat-toolbar {
+  background-color: #3498db; 
+  color: rgb(14, 14, 14); 
+  height: 64px; 
+}
+
+  
+    
+    
