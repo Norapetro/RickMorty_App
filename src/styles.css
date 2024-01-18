@@ -8,12 +8,13 @@
 
 /* Estilos para las tarjetas */
 .card {
-  border: 1px solid #ccc;
+  border: 1px solid #f9faed;
   margin: 20px;
   padding: 10px;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(19, 3, 250, 0.1);
+  background-color: rgb(254, 252, 250);
 }
 
 /* Estilos para el título de la tarjeta */

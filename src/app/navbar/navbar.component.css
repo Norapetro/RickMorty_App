@@ -1,17 +1,13 @@
 .container-fluid {
-    background-color: rgb(172, 99, 240);
+    background-color: rgb(36, 35, 36);
     color: rgb(249, 244, 244);
     height: 10vh;
-}
+  }
 
-.navbar-brand{
-    padding:10px;
+  .navbar-brand {
+    padding: 10px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 25px;
     font-weight: bold;
     color: rgb(167, 248, 4);
-}
-.btn{
-    background-color: aliceblue;
-    color: rgb(249, 4, 4);
-}
+  }
