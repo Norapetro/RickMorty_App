@@ -1,86 +1,90 @@
-/* app.component.css */
-
+/* Estilos para el contenedor de tarjetas */
 .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* Opcional: Alineación de las tarjetas */
-    padding: 20px; /* Opcional: Añadir espacio alrededor del contenedor */
-  }
-  
-  .card {
-      border: 1px solid #ccc;
-      margin: 20px;
-      padding: 10px;
-      text-align: center;
-      border-radius: 10px; /* Bordes redondeados */
-      box-shadow: 0 4px 8px rgba(19, 3, 250, 0.1); /* Sombra */
-      
-    }
-    
-    .card-title {
-      padding:10px;
-     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-     font-size: 25px;
-     letter-spacing: 1.6px;
-     color: #7D7D7D;
-     font-weight: 700;
-     text-decoration: none;
-     font-style: normal;
-     font-variant: normal;
-     text-transform: uppercase;
-     margin-bottom: 10px;
-    }
-    
-    .card-img-top {
-     width: 100;
-     border-radius: 44px;
-     background: #e0e0e0;
-     box-shadow: inset 5px 5px 14px #cecece,
-              inset -5px -5px 14px #f2f2f2;
-  }
-    
-    .card-body {
-      font-size: 1.2em;
-    }
-    
-    .card-text {
-      font-size: 1rem;
-      color: #666;
-    }
-    
-    .card-link {
-      text-decoration: none;
-      color: #007bff; /* Color del enlace */
-      margin-right: 10px;
-    }
-    
-    .card-link:hover {
-      text-decoration: underline; /* Subrayar al pasar el ratón sobre el enlace */
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* Estilos para las tarjetas */
+.card {
+  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(19, 3, 250, 0.1);
+}
+
+/* Estilos para el título de la tarjeta */
+.card-title {
+  padding: 10px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 25px;
+  letter-spacing: 1.6px;
+  color: #7D7D7D;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la imagen de la tarjeta */
+.card-img-top {
+  width: 100%;
+  border-radius: 44px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 14px #cecece, inset -5px -5px 14px #f2f2f2;
+}
+
+/* Estilos para el cuerpo de la tarjeta */
+.card-body {
+  font-size: 1.2em;
+}
+
+/* Estilos para el texto de la tarjeta */
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Estilos para el enlace de la tarjeta */
+.card-link {
+  text-decoration: none;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+/* Estilos para el enlace de la tarjeta al pasar el ratón sobre él */
+.card-link:hover {
+  text-decoration: underline;
+}
 
 /* Estilo para los botones de iconos en el mat-toolbar */
 button.example-icon {
-  color: rgb(255, 9, 9); 
+  color: rgb(255, 9, 9);
 }
 
 button.favorite-icon {
-  color: red; 
+  color: red;
 }
 
+/* Estilo para el espacio flexible en el mat-toolbar */
 span.example-spacer {
-  flex: 1; 
+  flex: 1;
   color: yellow;
 }
 
+/* Estilos para los botones de iconos al pasar el ratón sobre ellos */
 button.example-icon:hover {
-  background-color: #1565C0; /* Cambia el color de fondo al pasar el ratón sobre el botón */
-}
-mat-toolbar {
-  background-color: #3498db; 
-  color: rgb(14, 14, 14); 
-  height: 64px; 
+  background-color: #1565C0;
 }
 
-  
-    
-    
+/* Estilos para el mat-toolbar */
+mat-toolbar {
+  background-color: #3498db;
+  color: rgb(14, 14, 14);
+  height: 64px;
+}

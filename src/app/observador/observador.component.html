@@ -1,9 +1,7 @@
-
-
 <div class="cards-container">
   <div *ngFor="let personaje of personajes.results" 
-  class="card" 
-  style="width: 18rem;"
+    class="card" 
+    style="width: 18rem;"
   >
     <h1 class="card-title">{{ personaje.name }}</h1>
     <img [src]="personaje.image" class="card-img-top" alt="{{ personaje.name }}">
@@ -13,8 +11,10 @@
         Status: {{ personaje.status }}<br>
         Species: {{ personaje.species }}<br>
         Gender: {{ personaje.gender }}<br>
-        visto por primera vez: <br> <strong>{{personaje.origin.name}}</strong> 
-        visto por ultima vez: <br> <strong>{{personaje.location.name}}</strong> 
+        visto 1.ª vez: <strong>{{personaje.origin.name}}</strong><br> 
+        visto ultima vez: <strong>{{personaje.location.name}}</strong><br> 
       </p>
+    </div>
   </div>
+  <button mat-raised-button color="primary" class="custom-button" (click)="cargarMasPersonajes()">Cargar más personajes</button>
 </div>
